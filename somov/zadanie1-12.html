@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=!, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      let person = {
+        surname: "Карамзин ",
+        name: "Виктор ",
+        patronymic: "Геннадьевич <br>",
+        ocupation: "Преподаватель специальных дисциплин <br>",
+        degree: "Высшее <br>",
+        category: "Первая <br>",
+        education:
+          "Московский государственный институт электронной техники <br>",
+        discipline: ["Информатика <br>", "Основы программирования", "Инженерная графика"],
+      };
+    </script>
+  </head>
+  <body>
+    <header>
+        <h1 align="center">Введение в JavaScript</h1>
+      </header>
+    <script>let line =`
+    <h2> ${person.surname} ${person.name} ${person.patronymic} </h2>
+    <p><i>Должность :</i> ${person.ocupation}</p> 
+    <p><i>Уровень образования:</i> ${person.degree}</p> 
+    <p><i>Категория: </i> ${person.category}</p> 
+    <p><i>Образование: </i> ${person.education}</p> 
+    <p><i>Дисциплина: </i> <ul>
+       <li> ${person.discipline[0]}</li>
+       <li> ${person.discipline[1]}</li>
+       <li> ${person.discipline[2]}</li>
+       </ul></p> ` 
+
+    document.write(line);
+    </script>
+    <footer align="center">
+        <h3>Добро пожаловать на pechora_PROger</h3>
+        <a href="https://vk.com/pechora_proger" target="__blank"
+          >pechora_PROger</a
+>                                                           
+  </body>
+</html>
